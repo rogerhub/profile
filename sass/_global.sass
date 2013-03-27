@@ -1,0 +1,128 @@
+$serif: 'Gentium Basic', serif
+$sans: 'PT Sans', sans-serif
+$hand: 'Coming Soon', cursive
+$head: 'Oswald', serif
+
+$blue: #121f27
+
+$break-small: 755px
+
+::selection
+  background: black
+  color: white
+
+div.container
+  font-family: $sans
+  margin: auto
+  max-width: 840px
+  padding: 40px
+  header
+    border-bottom: 1px solid #ddd
+    border-top: 1px solid #ddd
+    margin: 0 0 15px
+    overflow: auto
+    padding: 20px 8px
+    position: relative
+    text-align: left
+    zoom: 1
+    h1
+      color: $blue
+      display: inline
+      font-family: $hand
+      font-size: 2.8em
+      line-height: 2.5em
+      padding: 4px 15px
+    nav
+      display: inline-block
+      position: absolute
+      right: 0
+      /* header padding top = 20px
+      top: 20px
+      /* 2.8 * 2.5 = 7
+      line-height: 7em
+      ul
+        list-style-type: none
+        li
+          display: inline
+          padding: 4px 15px
+          border-right: 1px solid #ddd
+          &:last-child
+            border-right: none
+          a
+            color: #444
+            text-decoration: none
+            &:hover
+              color: #000
+  div.flexslider
+    margin-top: 15px
+    & .flexslider-single
+      margin-bottom: 40px
+    .flex-caption
+      background: rgba(0, 0, 0, 0.6)
+      bottom: 0
+      color: white
+      line-height: 40px
+      padding: 0 13px
+      position: absolute
+      width: 100%
+
+  article
+    h2
+      font-family: $hand
+      font-size: 1.5em
+      line-height: 2em
+      text-align: center
+    p
+      line-height: 1.6em
+      margin-bottom: 2em
+      text-align: justify
+  footer
+    font-family: $hand
+    text-align: center
+    p
+      margin-bottom: 1.5em
+      text-align: center
+    ul
+      list-style-type: none
+      li
+        display: inline
+        padding: 0 12px
+        border-right: 1px solid #888
+        &:last-child
+          border-right: none
+        a
+          color: #fff
+          text-decoration: none
+          &:hover
+            color: #ddd
+
+div.rhblue
+  background: $blue 
+  box-shadow: inset 0px 0px 50px black
+  color: white
+  .flex-control-paging li a
+    background: rgba(255, 255, 255, 0.5)
+    box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.3)
+    &:hover
+      background: rgba(255, 255, 255, 0.7)
+    &.flex-active
+      background: rgba(255, 255, 255, 0.9)
+  .flex-direction-nav a
+    background-image: url(images/bg_direction_nav_invert.png)
+  .flexslider
+    background: transparent
+    border: 4px solid #000
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2)
+@media screen and (max-width: $break-small)
+  div.container
+    header
+      h1
+        display: block
+        font-size: 2em
+        text-align: center
+      nav
+        display: block
+        /* 2.0 * 1.5 = 3
+        line-height: 3em
+        position: static
+        text-align: center
