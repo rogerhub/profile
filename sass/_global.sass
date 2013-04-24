@@ -4,8 +4,10 @@ $hand: 'Coming Soon', cursive
 $head: 'Oswald', serif
 
 $blue: #121f27
+$hoverblue: #2a495b
 
-$break-small: 755px
+$break-small: 795px
+$break-supersmall: 585px
 
 ::selection
   background: black
@@ -16,17 +18,20 @@ div.container
   margin: auto
   max-width: 840px
   padding: 40px
+  a
+    border-bottom: 1px dotted $blue
+    color: $blue
+    text-decoration: none
+    &:hover
+      color: $hoverblue
   header
-    border-bottom: 1px solid #ddd
-    border-top: 1px solid #ddd
-    margin: 0 0 15px
     overflow: auto
     padding: 20px 8px
     position: relative
     text-align: left
     zoom: 1
     h1
-      color: $blue
+      color: white
       display: inline
       font-family: $hand
       font-size: 2.8em
@@ -45,14 +50,13 @@ div.container
         li
           display: inline
           padding: 4px 15px
-          border-right: 1px solid #ddd
           &:last-child
             border-right: none
           a
-            color: #444
+            color: white
             text-decoration: none
             &:hover
-              color: #000
+              color: #ccc
   div.flexslider
     margin-top: 15px
     & .flexslider-single
@@ -77,29 +81,26 @@ div.container
       margin-bottom: 2em
       text-align: justify
   footer
-    font-family: $hand
     text-align: center
     p
       margin-bottom: 1.5em
       text-align: center
-    ul
-      list-style-type: none
-      li
-        display: inline
-        padding: 0 12px
-        border-right: 1px solid #888
-        &:last-child
-          border-right: none
-        a
-          color: #fff
-          text-decoration: none
-          &:hover
-            color: #ddd
+      a
+        border-bottom: 1px dotted white
+        color: #fff
+        text-decoration: none
+        &:hover
+          color: #ddd
 
 div.rhblue
   background: $blue 
-  box-shadow: inset 0px 0px 50px black
   color: white
+  a
+    border-bottom: 1px dotted white
+    color: white
+    text-decoration: none
+    &:hover
+      color: #ccc
   .flex-control-paging li a
     background: rgba(255, 255, 255, 0.5)
     box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.3)
@@ -126,3 +127,13 @@ div.rhblue
         line-height: 3em
         position: static
         text-align: center
+
+@media screen and (max-width: $break-supersmall)
+  div.container
+    header
+      nav
+        ul
+          li
+            display: block
+            display: inline-block
+            border-right: none
