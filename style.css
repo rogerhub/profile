@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, big, cite,
+dfn, img, ins, kbd, q, s, samp,
+tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+::selection {
+  background: black;
+  color: white; }
+
+div.container {
+  font-family: "PT Sans", sans-serif;
+  margin: auto;
+  max-width: 840px;
+  padding: 40px; }
+  div.container header {
+    overflow: auto;
+    padding: 20px 8px;
+    position: relative;
+    text-align: left;
+    zoom: 1; }
+    div.container header h1 {
+      color: white;
+      display: inline;
+      font-family: "Coming Soon", cursive;
+      font-size: 2.8em;
+      line-height: 2.5em;
+      padding: 4px 15px; }
+    div.container header nav {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      /* header padding top = 20px */
+      top: 20px;
+      /* 2.8 * 2.5 = 7 */
+      line-height: 7em; }
+      div.container header nav ul {
+        list-style-type: none; }
+        div.container header nav ul li {
+          display: inline;
+          padding: 4px 15px; }
+          div.container header nav ul li:last-child {
+            border-right: none; }
+          div.container header nav ul li a {
+            color: white;
+            text-decoration: none; }
+            div.container header nav ul li a:hover {
+              color: #cccccc; }
+  div.container .flexslider {
+    margin-top: 15px; }
+    div.container .flexslider .flexslider-single {
+      margin-bottom: 40px; }
+    div.container .flexslider .flex-caption {
+      background: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      color: white;
+      line-height: 40px;
+      padding: 0 13px;
+      position: absolute;
+      width: 100%; }
+  div.container .flex-caption a {
+    border-bottom: 1px dotted #121f27;
+    color: #121f27;
+    text-decoration: none; }
+    div.container .flex-caption a:hover {
+      color: #2a495b; }
+  div.container article h2 {
+    font-family: "Coming Soon", cursive;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center; }
+  div.container article p {
+    line-height: 1.6em;
+    margin-bottom: 2em;
+    text-align: justify; }
+  div.container article a {
+    border-bottom: 1px dotted #121f27;
+    color: #121f27;
+    text-decoration: none; }
+    div.container article a:hover {
+      color: #2a495b; }
+  div.container footer {
+    text-align: center; }
+    div.container footer p {
+      margin-bottom: 1.5em;
+      text-align: center; }
+      div.container footer p a {
+        border-bottom: 1px dotted white;
+        color: white;
+        text-decoration: none; }
+        div.container footer p a:hover {
+          color: #dddddd; }
+
+div.rhblue {
+  background: #121f27;
+  color: white; }
+  div.rhblue article a {
+    border-bottom: 1px dotted white;
+    color: white;
+    text-decoration: none; }
+    div.rhblue article a:hover {
+      color: #cccccc; }
+  div.rhblue .flex-control-paging li a {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.3); }
+    div.rhblue .flex-control-paging li a:hover {
+      background: rgba(255, 255, 255, 0.7); }
+    div.rhblue .flex-control-paging li a.flex-active {
+      background: rgba(255, 255, 255, 0.9); }
+  div.rhblue .flex-direction-nav a {
+    background-image: url(images/bg_direction_nav_invert.png); }
+  div.rhblue .flexslider {
+    background: transparent;
+    border: 4px solid black;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2); }
+  div.rhblue .flex-caption a {
+    border-bottom: 1px dotted white;
+    color: white;
+    text-decoration: none; }
+    div.rhblue .flex-caption a:hover {
+      color: #cccccc; }
+
+@media screen and (max-width: 795px) {
+  div.container header h1 {
+    display: block;
+    font-size: 2em;
+    text-align: center; }
+  div.container header nav {
+    display: block;
+    /* 2.0 * 1.5 = 3 */
+    line-height: 3em;
+    position: static;
+    text-align: center; } }
+@media screen and (max-width: 585px) {
+  div.container header nav ul li {
+    display: block;
+    display: inline-block;
+    border-right: none; } }

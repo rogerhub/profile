@@ -18,12 +18,6 @@ div.container
   margin: auto
   max-width: 840px
   padding: 40px
-  a
-    border-bottom: 1px dotted $blue
-    color: $blue
-    text-decoration: none
-    &:hover
-      color: $hoverblue
   header
     overflow: auto
     padding: 20px 8px
@@ -57,7 +51,7 @@ div.container
             text-decoration: none
             &:hover
               color: #ccc
-  div.flexslider
+  .flexslider
     margin-top: 15px
     & .flexslider-single
       margin-bottom: 40px
@@ -69,6 +63,13 @@ div.container
       padding: 0 13px
       position: absolute
       width: 100%
+  .flex-caption
+    a
+      border-bottom: 1px dotted $blue
+      color: $blue
+      text-decoration: none
+      &:hover
+        color: $hoverblue
 
   article
     h2
@@ -80,6 +81,12 @@ div.container
       line-height: 1.6em
       margin-bottom: 2em
       text-align: justify
+    a
+      border-bottom: 1px dotted $blue
+      color: $blue
+      text-decoration: none
+      &:hover
+        color: $hoverblue
   footer
     text-align: center
     p
@@ -95,12 +102,13 @@ div.container
 div.rhblue
   background: $blue 
   color: white
-  a
-    border-bottom: 1px dotted white
-    color: white
-    text-decoration: none
-    &:hover
-      color: #ccc
+  article
+    a
+      border-bottom: 1px dotted white
+      color: white
+      text-decoration: none
+      &:hover
+        color: #ccc
   .flex-control-paging li a
     background: rgba(255, 255, 255, 0.5)
     box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.3)
@@ -114,6 +122,13 @@ div.rhblue
     background: transparent
     border: 4px solid #000
     box-shadow: 0 1px 4px rgba(255, 255, 255, 0.2)
+  .flex-caption
+    a
+      border-bottom: 1px dotted white
+      color: white
+      text-decoration: none
+      &:hover
+        color: #ccc
 @media screen and (max-width: $break-small)
   div.container
     header
